@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Portofolio Ameta Novelia br Karo: Meta Ads Specialist, digital marketing, dan Pelaksana Ekspor bersertifikat BNSP.">
+<title>Portofolio Ameta Novelia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Figtree:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* Plan: a shipping-manifest motif (mono metadata lines, one customs-style stamp) carrying a digital-marketing case-study page. Left-aligned single column, ledger-style data rows. */
+:root{
+  --paper:#F3F4F1;
+  --surface:#FFFFFF;
+  --ink:#14212B;
+  --muted:#56636D;
+  --line:#D6DBD6;
+  --accent:#F2B705;
+  --accent-soft:rgba(242,183,5,.42);
+  --stamp:#C2412A;
+  --display:'Bricolage Grotesque','Arial Narrow',Arial,sans-serif;
+  --body:'Figtree',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --mono:'IBM Plex Mono',ui-monospace,Menlo,Consolas,monospace;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#0E161C; --surface:#152029; --ink:#E8ECE6; --muted:#98A5AD; --line:#283640;
+    --accent:#F2B705; --accent-soft:rgba(242,183,5,.30); --stamp:#E8705A; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0E161C; --surface:#152029; --ink:#E8ECE6; --muted:#98A5AD; --line:#283640;
+  --accent:#F2B705; --accent-soft:rgba(242,183,5,.30); --stamp:#E8705A; color-scheme:dark;
+}
+
+html[lang="id"] [data-l="en"], html[lang="en"] [data-l="id"]{display:none !important}
+
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+h1,h2,h3{font-family:var(--display);line-height:1.08;margin:0;text-wrap:balance;letter-spacing:-.01em}
+p{margin:0}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+.mono{font-family:var(--mono);font-size:12.5px;letter-spacing:.06em;text-transform:uppercase}
+.muted{color:var(--muted)}
+.hl{background:linear-gradient(transparent 58%,var(--accent-soft) 58%);padding:0 .08em}
+.num{font-variant-numeric:tabular-nums}
+
+/* top bar */
+.bar{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--paper) 92%,transparent);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+.bar .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:56px}
+.bar nav{display:flex;gap:20px;flex-wrap:wrap}
+.bar nav a{text-decoration:none;color:var(--muted)}
+.bar nav a:hover{color:var(--ink)}
+.lang{display:flex;border:1px solid var(--ink);border-radius:999px;overflow:hidden;flex:none}
+.lang button{font:500 12.5px/1 var(--mono);letter-spacing:.08em;background:transparent;color:var(--ink);border:0;padding:8px 14px;cursor:pointer}
+.lang button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+
+/* hero */
+.hero{padding:64px 0 40px;position:relative}
+.manifest{display:flex;flex-wrap:wrap;gap:0;border-top:1px solid var(--ink);border-bottom:1px solid var(--ink)}
+.manifest div{padding:10px 18px 10px 0;margin-right:18px;border-right:1px solid var(--line)}
+.manifest div:last-child{border-right:0}
+.manifest b{display:block;font-weight:500;color:var(--muted);font-size:11px}
+.hero h1{font-size:clamp(44px,8.4vw,104px);font-weight:800;letter-spacing:-.035em;margin:36px 0 22px;max-width:11ch}
+.hero .thesis{font-family:var(--display);font-weight:400;font-size:clamp(22px,2.7vw,31px);line-height:1.3;max-width:30ch}
+.hero .sub{margin-top:20px;max-width:58ch;color:var(--muted)}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 20px;border-radius:999px;text-decoration:none;font-weight:600;border:1.5px solid var(--ink)}
+.btn.primary{background:var(--ink);color:var(--paper)}
+.btn:hover{transform:translateY(-1px)}
+.stamp{position:absolute;right:8px;top:118px;transform:rotate(-8deg);border:2.5px solid var(--stamp);color:var(--stamp);padding:12px 16px 10px;border-radius:6px;text-align:center;font-family:var(--mono);text-transform:uppercase;letter-spacing:.1em;font-size:11px;line-height:1.5;opacity:.92;mix-blend-mode:multiply}
+:root[data-theme="dark"] .stamp{mix-blend-mode:normal}
+.stamp strong{display:block;font-family:var(--display);font-size:22px;letter-spacing:.02em;line-height:1.1;margin:2px 0}
+@media (prefers-reduced-motion:no-preference){
+  .stamp{animation:thump .55s cubic-bezier(.2,.9,.3,1.3) .35s both}
+  @keyframes thump{from{transform:rotate(-8deg) scale(1.5);opacity:.35}to{transform:rotate(-8deg) scale(1);opacity:.92}}
+}
+
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(5,1fr);gap:0;margin-top:48px;border-top:1px solid var(--line)}
+.stat{padding:18px 16px 18px 0;border-right:1px solid var(--line)}
+.stat + .stat{padding-left:16px}
+.stat:last-child{border-right:0}
+.stat .v{font-family:var(--display);font-weight:800;font-size:clamp(26px,3.2vw,40px);line-height:1;letter-spacing:-.02em}
+.stat .k{margin-top:8px;font-size:14px;color:var(--muted);line-height:1.35}
+.src{margin-top:10px;font-size:11px}
+
+/* sections */
+section{padding:72px 0;border-top:1px solid var(--line)}
+.sec-head{display:grid;grid-template-columns:200px 1fr;gap:24px;margin-bottom:36px}
+.sec-head .mono{padding-top:10px}
+.sec-head h2{font-size:clamp(30px,4.2vw,50px);font-weight:800}
+.sec-head p{margin-top:14px;max-width:60ch;color:var(--muted)}
+.body-grid{display:grid;grid-template-columns:200px 1fr;gap:24px}
+.body-grid > :first-child{grid-column:2}
+
+.facts{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 28px}
+.chip{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:5px 12px;font-size:14px}
+
+.two{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+.list{margin:0;padding:0;list-style:none;display:grid;gap:12px}
+.list li{position:relative;padding-left:26px}
+.list li::before{content:"";position:absolute;left:0;top:.55em;width:10px;height:10px;background:var(--accent);border-radius:2px}
+h3{font-size:22px;font-weight:600;margin-bottom:12px}
+
+/* ledger chart */
+.ledger{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:22px 22px 14px;margin-top:36px;overflow-x:auto}
+.ledger-title{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:16px}
+.ledger-title h3{margin:0;font-size:19px}
+.ledger table{width:100%;border-collapse:collapse;min-width:680px;font-variant-numeric:tabular-nums}
+.ledger th{font:500 11px/1.3 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);text-align:right;padding:6px 10px;border-bottom:1px solid var(--line);vertical-align:bottom}
+.ledger th:first-child,.ledger td:first-child{text-align:left;padding-left:0}
+.ledger td{padding:9px 10px;border-bottom:1px solid var(--line);text-align:right;font-size:15px;white-space:nowrap}
+.ledger tr:last-child td{border-bottom:0}
+.ledger td.barcell{width:38%;padding-right:0}
+.ledger th.barcell{text-align:left}
+.track{position:relative;height:20px}
+.fill{position:absolute;left:0;top:3px;height:14px;background:var(--muted);opacity:.35;border-radius:0 3px 3px 0}
+.best .fill{background:var(--accent);opacity:1}
+.avg{position:absolute;top:-4px;bottom:-4px;width:0;border-left:1.5px dashed var(--ink)}
+.barval{position:absolute;top:0;font-size:13px;line-height:20px;padding-left:6px;color:var(--ink)}
+.axis{display:flex;justify-content:space-between;position:relative;height:16px}
+.axis span{position:absolute;transform:translateX(-50%);font-size:11px;color:var(--muted);font-family:var(--mono)}
+tr.best td:first-child{font-weight:600}
+.legend{display:flex;gap:18px;flex-wrap:wrap;font-size:13px;color:var(--muted);margin-top:12px}
+.legend i{display:inline-block;width:12px;height:10px;border-radius:2px;margin-right:6px;vertical-align:middle}
+
+/* insights */
+.insights{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:20px}
+.insight{border-top:3px solid var(--ink);padding-top:14px}
+.insight.next{border-top-color:var(--stamp)}
+.insight .big{font-family:var(--display);font-weight:800;font-size:30px;line-height:1.05;margin:6px 0 8px}
+.insight p{font-size:15.5px;color:var(--muted)}
+
+/* gallery */
+.pillars{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.pillar{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:16px}
+.pillar h3{font-size:17px;margin:6px 0}
+.pillar p{font-size:14.5px;color:var(--muted)}
+.pillar .eg{margin-top:10px;font-size:13.5px;font-style:italic;color:var(--ink)}
+.shots{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:22px}
+.shots figure{margin:0}
+.shots img{border-radius:8px;border:1px solid var(--line);width:100%;aspect-ratio:9/8;object-fit:cover;object-position:top}
+.shots figcaption{font-size:12px;margin-top:6px}
+
+/* cards */
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:20px}
+.card h3{font-size:19px;margin:4px 0 6px}
+.card p{font-size:15.5px;color:var(--muted)}
+.card .topics{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.card .topics span{font-size:12.5px;border:1px solid var(--line);border-radius:999px;padding:2px 9px;color:var(--muted)}
+.certimg{display:grid;grid-template-columns:150px 1fr;gap:18px;align-items:start}
+.certimg img{border-radius:6px;border:1px solid var(--line)}
+
+.export{display:grid;grid-template-columns:260px 1fr;gap:32px;align-items:start}
+.export img{border-radius:8px;border:1px solid var(--line);box-shadow:0 10px 30px -18px rgba(0,0,0,.45);transform:rotate(-1.5deg)}
+
+/* timeline */
+.tl{display:grid;gap:0}
+.tl-row{display:grid;grid-template-columns:200px 1fr;gap:24px;padding:18px 0;border-bottom:1px solid var(--line)}
+.tl-row:last-child{border-bottom:0}
+.tl-row h3{font-size:19px;margin:0 0 4px}
+.tl-row p{font-size:15.5px;color:var(--muted)}
+
+.skills{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.skills ul{margin:8px 0 0;padding-left:18px;font-size:15.5px}
+
+/* contact */
+.contact{background:var(--ink);color:var(--paper);border-top:0}
+.contact .muted{color:color-mix(in srgb,var(--paper) 70%,transparent)}
+.contact h2{font-size:clamp(34px,5vw,60px);font-weight:800;max-width:16ch}
+.contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:36px}
+.contact-grid a{text-decoration:none;font-size:18px;font-weight:600;word-break:break-word}
+.contact-grid a:hover{text-decoration:underline;text-decoration-color:var(--accent);text-decoration-thickness:2px}
+footer{padding:22px 0;font-size:12px}
+
+@media screen and (max-width:900px){
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .stat{border-right:0;border-bottom:1px solid var(--line);padding-left:0 !important}
+  .sec-head,.body-grid,.tl-row{grid-template-columns:1fr;gap:8px}
+  .body-grid > :first-child{grid-column:auto}
+  .insights,.two,.cards,.skills,.contact-grid{grid-template-columns:1fr}
+  .pillars,.shots{grid-template-columns:repeat(2,1fr)}
+  .export{grid-template-columns:1fr}
+  .export img{max-width:240px}
+  .stamp{position:static;display:inline-block;margin-top:20px}
+  .bar nav{display:none}
+}
+@media screen and (max-width:420px){ .wrap{padding:0 16px} .pillars,.shots{grid-template-columns:1fr 1fr} .certimg{grid-template-columns:1fr} }
+
+/* print / PDF */
+@page{size:A4;margin:14mm 13mm}
+@media print{
+  :root,:root[data-theme="dark"]{--paper:#FFFFFF;--surface:#FFFFFF;--ink:#14212B;--muted:#56636D;--line:#D6DBD6;--accent:#F2B705;--accent-soft:rgba(242,183,5,.42);--stamp:#C2412A;color-scheme:light}
+  *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  body{font-size:12.5px}
+  .bar,.cta{display:none}
+  .wrap{max-width:none;padding:0}
+  .hero{padding:4px 0 12px}
+  .hero h1{font-size:58px;margin:22px 0 14px}
+  .hero .thesis{font-size:20px}
+  .stamp{top:72px;animation:none}
+  .stats{margin-top:24px}
+  .stat .v{font-size:26px}
+  section{padding:26px 0;break-before:auto}
+  .sec-head{grid-template-columns:120px 1fr;margin-bottom:18px}
+  .sec-head h2{font-size:28px}
+  .body-grid,.tl-row{grid-template-columns:120px 1fr}
+  .ledger table{min-width:0}
+  .ledger td{font-size:11.5px;padding:6px 8px}
+  .ledger,.insight,.pillar,.card,.tl-row,.shots figure,.export,.skills > div{break-inside:avoid}
+  .insight .big{font-size:22px}
+  .shots img{aspect-ratio:9/8}
+  .page-break{break-before:auto}
+  .sec-head{break-after:avoid;break-inside:avoid}
+  #jejak-pemuda,#keahlian,#kontak{break-inside:avoid}
+  .certimg{grid-column:1/-1}
+  .ledger-title{break-after:avoid}
+  .contact{background:#FFFFFF;color:#14212B;border-top:2px solid #14212B}
+  .contact .muted{color:#56636D}
+  .contact h2{font-size:30px}
+  .contact-grid a{font-size:13px}
+  .print-only{display:block !important}
+}
+.print-only{display:none}
+</style>
+</head>
+<body>
+
+<header class="bar">
+  <div class="wrap">
+    <a href="#top" class="mono" style="text-decoration:none">Ameta Novelia br Karo</a>
+    <nav class="mono" aria-label="Sections">
+      <a href="#meta-ads"><span data-l="id">Studi kasus</span><span data-l="en">Case studies</span></a>
+      <a href="#ekspor"><span data-l="id">Ekspor</span><span data-l="en">Export</span></a>
+      <a href="#sertifikasi"><span data-l="id">Sertifikasi</span><span data-l="en">Certifications</span></a>
+      <a href="#kontak"><span data-l="id">Kontak</span><span data-l="en">Contact</span></a>
+    </nav>
+    <div class="lang" role="group" aria-label="Bahasa / Language">
+      <button type="button" id="btn-id" aria-pressed="true" data-set="id">ID</button>
+      <button type="button" id="btn-en" aria-pressed="false" data-set="en">EN</button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+<div class="wrap hero">
+  <div class="manifest mono">
+    <div><b data-l="id">Asal</b><b data-l="en">Origin</b>Medan, ID</div>
+    <div><b data-l="id">Peran</b><b data-l="en">Role</b>Meta Ads Specialist</div>
+    <div><b data-l="id">Fokus</b><b data-l="en">Focus</b>Performance &amp; Social</div>
+    <div><b data-l="id">Bahasa</b><b data-l="en">Languages</b>ID / EN</div>
+  </div>
+
+  <div class="stamp" aria-label="BNSP certified Export Executor">
+    BNSP <span data-l="id">Bersertifikat</span><span data-l="en">Certified</span>
+    <strong data-l="id">Pelaksana Ekspor</strong><strong data-l="en">Export Executor</strong>
+    2024 – 2027
+  </div>
+
+  <h1>Ameta Novelia br Karo</h1>
+  <p class="thesis" data-l="id">Saya mengubah anggaran iklan menjadi <span class="hl">percakapan dengan pembeli</span>, dan membantu produk lokal menjangkau pasar yang lebih luas.</p>
+  <p class="thesis" data-l="en">I turn ad budgets into <span class="hl">conversations with buyers</span>, and help local products reach wider markets.</p>
+  <p class="sub" data-l="id">Meta Ads Specialist di F2C Furniture. Bersertifikat BNSP sebagai Pelaksana Ekspor. Sarjana Hubungan Internasional (IPK 3,84) dengan pengalaman konten media sosial, riset, dan komunikasi lintas budaya.</p>
+  <p class="sub" data-l="en">Meta Ads Specialist at F2C Furniture. BNSP-certified Export Executor. International Relations graduate (GPA 3.84) with experience in social media content, research, and cross-cultural communication.</p>
+  <div class="cta">
+    <a class="btn primary" href="#meta-ads"><span data-l="id">Lihat studi kasus</span><span data-l="en">See case studies</span> ↓</a>
+    <a class="btn" href="#kontak"><span data-l="id">Hubungi saya</span><span data-l="en">Get in touch</span></a>
+    <a class="btn" href="Portofolio_Ameta_Novelia_ID.pdf" download data-l="id">Unduh PDF</a>
+    <a class="btn" href="Portofolio_Ameta_Novelia_EN.pdf" download data-l="en">Download PDF</a>
+  </div>
+
+  <div class="stats">
+    <div class="stat"><div class="v num">−21%</div><div class="k" data-l="id">biaya per percakapan di wilayah terbaik vs rata-rata akun</div><div class="k" data-l="en">cost per conversation in the best region vs account average</div></div>
+    <div class="stat"><div class="v num">17.089</div><div class="k" data-l="id">kontak pesan dari calon pembeli</div><div class="k" data-l="en">messaging contacts from prospects</div></div>
+    <div class="stat"><div class="v num">0,94%</div><div class="k" data-l="id">CTR rata-rata akun, tertinggi 1,42%</div><div class="k" data-l="en">account average CTR, peaking at 1.42%</div></div>
+    <div class="stat"><div class="v num">14,7 jt</div><div class="k" data-l="id">impresi, menjangkau 5,05 jt akun</div><div class="k" data-l="en">impressions, reaching 5.05M accounts</div></div>
+    <div class="stat"><div class="v num">8</div><div class="k" data-l="id">kampanye regional di Bali, Kalimantan &amp; Sulawesi</div><div class="k" data-l="en">regional campaigns across Bali, Kalimantan &amp; Sulawesi</div></div>
+  </div>
+  <p class="src mono muted"><span data-l="id">Sumber: Meta Ads Manager, F2C Furniture, 8 kampanye aktif</span><span data-l="en">Source: Meta Ads Manager, F2C Furniture, 8 active campaigns</span></p>
+</div>
+
+<!-- CASE 01 -->
+<section id="meta-ads">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="mono muted"><span data-l="id">Studi kasus 01</span><span data-l="en">Case study 01</span></div>
+      <div>
+        <h2 data-l="id">F2C Furniture: iklan Meta yang berakhir di chat penjualan</h2>
+        <h2 data-l="en">F2C Furniture: Meta ads that end in a sales chat</h2>
+        <p data-l="id">F2C Furniture menjual furnitur langsung dari pabrik lewat 14 cabang di Bali, Kalimantan, dan Sulawesi. Pembeli memesan lewat chat, jadi ukuran keberhasilan kampanye adalah percakapan yang dimulai, bukan sekadar klik.</p>
+        <p data-l="en">F2C Furniture sells factory-direct furniture through 14 branches across Bali, Kalimantan, and Sulawesi. Customers order by chat, so campaigns are measured on conversations started, not just clicks.</p>
+      </div>
+    </div>
+
+    <div class="body-grid">
+      <div>
+        <div class="facts">
+          <span class="chip">Facebook &amp; Instagram Ads</span>
+          <span class="chip" data-l="id">Tujuan: percakapan pesan</span><span class="chip" data-l="en">Objective: messaging conversations</span>
+          <span class="chip" data-l="id">Juni 2026 – sekarang</span><span class="chip" data-l="en">June 2026 – present</span>
+          <span class="chip">ROAS · CTR · CPA · CPM</span>
+        </div>
+        <div class="two">
+          <div>
+            <h3 data-l="id">Yang saya kerjakan</h3><h3 data-l="en">What I did</h3>
+            <ul class="list" data-l="id">
+              <li>Memecah kampanye per kota dan wilayah agar anggaran, audiens, dan materi iklan bisa disesuaikan dengan pasar lokal tiap cabang.</li>
+              <li>Melakukan A/B testing pada creative, copy, dan penempatan iklan.</li>
+              <li>Memantau biaya per percakapan, CTR, CPC, dan CPM di Meta Ads Manager untuk mengatur alokasi anggaran.</li>
+            </ul>
+            <ul class="list" data-l="en">
+              <li>Split campaigns by city and region so budget, audience, and creative fit each branch's local market.</li>
+              <li>Ran A/B tests on creative, copy, and ad placements.</li>
+              <li>Tracked cost per conversation, CTR, CPC, and CPM in Meta Ads Manager to steer budget allocation.</li>
+            </ul>
+          </div>
+          <div>
+            <h3 data-l="id">&nbsp;</h3><h3 data-l="en">&nbsp;</h3>
+            <ul class="list" data-l="id">
+              <li>Bekerja dengan tim kreatif menyusun visual dan copywriting yang menonjolkan harga langsung dari pabrik.</li>
+              <li>Menyusun laporan performa berkala beserta rekomendasi untuk kampanye berikutnya.</li>
+            </ul>
+            <ul class="list" data-l="en">
+              <li>Worked with the creative team on visuals and copy built around factory-direct pricing.</li>
+              <li>Produced regular performance reports with recommendations for the next round of campaigns.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ledger">
+      <div class="ledger-title">
+        <h3 data-l="id">Biaya per percakapan, per wilayah (indeks)</h3>
+        <h3 data-l="en">Cost per conversation, by region (index)</h3>
+        <span class="mono muted" data-l="id">Diurutkan dari yang paling efisien</span>
+        <span class="mono muted" data-l="en">Sorted from most efficient</span>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th data-l="id">Wilayah</th><th data-l="en">Region</th>
+            <th data-l="id">Porsi anggaran</th><th data-l="en">Share of spend</th>
+            <th data-l="id">Kontak pesan</th><th data-l="en">Msg. contacts</th>
+            <th>CTR</th>
+            <th class="barcell" data-l="id">Indeks biaya per percakapan (rata-rata = 100)</th><th class="barcell" data-l="en">Cost per conversation index (average = 100)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="best"><td>Sulawesi Selatan</td><td>23,6%</td><td>6.129</td><td>0,74%</td><td class="barcell"><div class="track"><div class="fill" style="width:56.2%"></div><span class="barval" style="left:56.2%">79</span><div class="avg" style="left:71.43%"></div></div></td></tr>
+          <tr class="best"><td>Banjarmasin</td><td>15,7%</td><td>2.780</td><td>0,94%</td><td class="barcell"><div class="track"><div class="fill" style="width:58.2%"></div><span class="barval" style="left:58.2%">82</span><div class="avg" style="left:71.43%"></div></div></td></tr>
+          <tr><td>Sulawesi Utara</td><td>17,7%</td><td>3.290</td><td>1,42%</td><td class="barcell"><div class="track"><div class="fill" style="width:78.6%"></div><span class="barval" style="left:78.6%">110</span><div class="avg" style="left:71.43%"></div></div></td></tr>
+          <tr><td>Bitung</td><td>1,3%</td><td>278</td><td>1,36%</td><td class="barcell"><div class="track"><div class="fill" style="width:80.3%"></div><span class="barval" style="left:80.3%">112</span><div class="avg" style="left:71.43%"></div></div></td></tr>
+          <tr><td>Bali / Singaraja</td><td>13,6%</td><td>2.296</td><td>0,87%</td><td class="barcell"><div class="track"><div class="fill" style="width:84.2%"></div><span class="barval" style="left:84.2%">118</span><div class="avg" style="left:71.43%"></div></div></td></tr>
+          <tr><td>Palangkaraya</td><td>3,0%</td><td>264</td><td>0,92%</td><td class="barcell"><div class="track"><div class="fill" style="width:87.5%"></div><span class="barval" style="left:87.5%">122</span><div class="avg" style="left:71.43%"></div></div></td></tr>
+          <tr><td>Samarinda</td><td>12,6%</td><td>1.503</td><td>0,89%</td><td class="barcell"><div class="track"><div class="fill" style="width:88.4%"></div><span class="barval" style="left:88.4%">124</span><div class="avg" style="left:71.43%"></div></div></td></tr>
+          <tr><td>Balikpapan</td><td>12,6%</td><td>1.294</td><td>0,95%</td><td class="barcell"><div class="track"><div class="fill" style="width:95.6%"></div><span class="barval" style="left:95.6%">134</span><div class="avg" style="left:71.43%"></div></div></td></tr>
+          <tr><td></td><td></td><td></td><td></td><td class="barcell"><div class="axis"><span style="left:0%">0</span><span style="left:35.71%">50</span><span style="left:71.43%">100</span></div></td></tr>
+        </tbody>
+      </table>
+      <div class="legend">
+        <span><i style="background:var(--accent)"></i><span data-l="id">Di bawah rata-rata akun</span><span data-l="en">Below account average</span></span>
+        <span><i style="border-left:1.5px dashed var(--ink);width:0;height:12px"></i><span data-l="id">Rata-rata akun = 100</span><span data-l="en">Account average = 100</span></span>
+        <span class="mono"><span data-l="id">Total: 17.089 kontak · 14,7 jt impresi · CTR 0,94%</span><span data-l="en">Total: 17,089 contacts · 14.7M impressions · CTR 0.94%</span></span>
+      </div>
+    </div>
+
+    <div class="insights">
+      <div class="insight">
+        <span class="mono muted" data-l="id">Temuan 1</span><span class="mono muted" data-l="en">Finding 1</span>
+        <div class="big num" data-l="id">24% anggaran, &gt;⅓ kontak</div>
+        <div class="big num" data-l="en">24% of spend, &gt;⅓ of contacts</div>
+        <p data-l="id">Sulawesi Selatan menyerap anggaran terbesar dan tetap menjadi yang paling efisien: 6.129 kontak pesan dengan biaya per percakapan 21% di bawah rata-rata akun.</p>
+        <p data-l="en">South Sulawesi took the largest budget and stayed the most efficient: 6,129 messaging contacts at a cost per conversation 21% below the account average.</p>
+      </div>
+      <div class="insight">
+        <span class="mono muted" data-l="id">Temuan 2</span><span class="mono muted" data-l="en">Finding 2</span>
+        <div class="big num" data-l="id">CTR 1,5× rata-rata</div>
+        <div class="big num" data-l="en">CTR 1.5× average</div>
+        <p data-l="id">Kampanye Sulawesi Utara (1,42%) dan Bitung (1,36%) mencatat CTR tertinggi di akun, sekitar 1,5 kali rata-rata 0,94%. Kombinasi materi dan audiens di dua kampanye ini paling berhasil memancing klik.</p>
+        <p data-l="en">North Sulawesi (1.42%) and Bitung (1.36%) posted the highest CTR in the account, about 1.5× the 0.94% average. Their creative-and-audience pairing drew the most clicks.</p>
+      </div>
+      <div class="insight next">
+        <span class="mono muted" data-l="id">Langkah berikutnya</span><span class="mono muted" data-l="en">Next step</span>
+        <div class="big num">Balikpapan</div>
+        <p data-l="id">Biaya per percakapan tertinggi, 34% di atas rata-rata akun, dengan anggaran setara Samarinda. Prioritas uji ulang audiens dan creative, atau geser anggaran ke wilayah yang lebih efisien.</p>
+        <p data-l="en">Highest cost per conversation, 34% above the account average, on a budget similar to Samarinda. First in line for audience and creative re-tests, or budget shifts toward more efficient regions.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CASE 02 -->
+<section id="tiktok" class="page-break">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="mono muted"><span data-l="id">Studi kasus 02</span><span data-l="en">Case study 02</span></div>
+      <div>
+        <h2 data-l="id">Konten TikTok untuk 8 akun cabang</h2>
+        <h2 data-l="en">TikTok content for 8 branch accounts</h2>
+        <p data-l="id">Setiap cabang F2C punya akun TikTok sendiri, dari Bali sampai Kotamobagu. Kontennya dibangun di atas satu pesan yang sama dengan iklan Meta: furnitur berkualitas, harga langsung dari pabrik, pesan lewat WhatsApp.</p>
+        <p data-l="en">Each F2C branch runs its own TikTok account, from Bali to Kotamobagu. The content carries the same message as the Meta ads: quality furniture, factory-direct prices, order via WhatsApp.</p>
+      </div>
+    </div>
+
+    <div class="pillars">
+      <div class="pillar">
+        <span class="mono muted">Pilar 1</span>
+        <h3 data-l="id">Hook kejutan harga</h3><h3 data-l="en">Price-surprise hook</h3>
+        <p data-l="id">Membuka dengan tebakan harga mahal, lalu membalik dengan harga asli. Video teratas di akun Makassar memakai format ini.</p>
+        <p data-l="en">Opens with an expensive guess, then flips to the real price. The top video on the Makassar account uses this format.</p>
+        <p class="eg" data-l="id">"Kirain lemari 4P 10 jutaan, ternyata cuma 2 jutaan"</p>
+        <p class="eg" data-l="en">"Thought this 4-door wardrobe was 10 million, it's only 2 million"</p>
+      </div>
+      <div class="pillar">
+        <span class="mono muted">Pilar 2</span>
+        <h3 data-l="id">Etalase produk + label harga</h3><h3 data-l="en">Product showcase + price tag</h3>
+        <p data-l="id">Satu produk per video, dengan nama seri dan stiker "Harga Spesial" agar penonton langsung tahu harga sebelum chat.</p>
+        <p data-l="en">One product per video, with the model name and a "Special Price" sticker so viewers see the price before they message.</p>
+      </div>
+      <div class="pillar">
+        <span class="mono muted">Pilar 3</span>
+        <h3 data-l="id">Di balik pabrik</h3><h3 data-l="en">Behind the factory</h3>
+        <p data-l="id">Proses produksi dan suasana gudang sebagai bukti klaim "langsung dari pabrik".</p>
+        <p data-l="en">Production and warehouse footage as proof of the "direct from the factory" claim.</p>
+      </div>
+      <div class="pillar">
+        <span class="mono muted">Pilar 4</span>
+        <h3 data-l="id">POV &amp; situasi relatable</h3><h3 data-l="en">POV &amp; relatable moments</h3>
+        <p data-l="id">Menyasar momen hidup yang memicu pembelian, seperti pasangan yang baru mau menikah dan mengisi rumah pertama.</p>
+        <p data-l="en">Targets life moments that trigger purchases, such as newlyweds furnishing their first home.</p>
+      </div>
+    </div>
+
+    <div class="shots">
+      <figure><img src="assets/tt-bjm.jpg" alt="Grid video TikTok F2C Warehouse Banjarmasin"><figcaption class="mono muted">@f2cfurniture.bjm</figcaption></figure>
+      <figure><img src="assets/tt-mks.jpg" alt="Grid video TikTok F2C Furniture Makassar"><figcaption class="mono muted">@f2cfurniture.mks</figcaption></figure>
+      <figure><img src="assets/tt-blp.jpg" alt="Grid video TikTok F2C Furniture Balikpapan"><figcaption class="mono muted">@f2cfurniture.blp</figcaption></figure>
+      <figure><img src="assets/tt-smd.jpg" alt="Grid video TikTok F2C Furniture Samarinda"><figcaption class="mono muted">@f2cfurniture.smd</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- CASE 03 -->
+<section id="jejak-pemuda">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="mono muted"><span data-l="id">Studi kasus 03</span><span data-l="en">Case study 03</span></div>
+      <div>
+        <h2 data-l="id">Jejak Pemuda: media sosial untuk gerakan anak muda</h2>
+        <h2 data-l="en">Jejak Pemuda: social media for a youth movement</h2>
+        <p data-l="id">Magang Digital Marketing, Januari – Mei 2025, di LSM yang berfokus pada pemuda.</p>
+        <p data-l="en">Digital Marketing Intern, January – May 2025, at a youth-focused NGO.</p>
+      </div>
+    </div>
+    <div class="body-grid">
+      <div>
+        <ul class="list" data-l="id">
+          <li>Menyusun dan mengelola kalender konten media sosial.</li>
+          <li>Membuat grafis di Canva dan menulis caption untuk kampanye digital, lalu menjadwalkannya di jam dengan keterlibatan audiens tertinggi.</li>
+          <li>Memantau analitik untuk mengevaluasi kampanye dan mengusulkan penyesuaian berbasis data.</li>
+          <li>Bekerja dengan tim program untuk meningkatkan visibilitas inisiatif komunitas.</li>
+        </ul>
+        <ul class="list" data-l="en">
+          <li>Planned and managed the social media content calendar.</li>
+          <li>Designed graphics in Canva and wrote captions for digital campaigns, scheduled for peak audience engagement.</li>
+          <li>Monitored analytics to evaluate campaigns and proposed data-driven adjustments.</li>
+          <li>Worked with the program team to raise the visibility of community initiatives.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPORT -->
+<section id="ekspor" class="page-break">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="mono muted"><span data-l="id">Pembeda</span><span data-l="en">What sets me apart</span></div>
+      <div>
+        <h2 data-l="id">Digital marketing yang paham ekspor</h2>
+        <h2 data-l="en">Digital marketing with export know-how</h2>
+        <p data-l="id">Saya bersertifikat kompetensi BNSP sebagai Pelaksana Ekspor di bidang Koperasi dan UMKM. Ditambah latar belakang Hubungan Internasional, saya bisa membantu brand lokal menyiapkan pemasaran untuk pembeli di luar negeri.</p>
+        <p data-l="en">I hold a BNSP competency certificate as an Export Executor for Cooperatives and SMEs. Combined with my International Relations background, I can help local brands prepare their marketing for overseas buyers.</p>
+      </div>
+    </div>
+    <div class="export">
+      <img src="assets/cert-bnsp.jpg" alt="Sertifikat Kompetensi BNSP Pelaksana Ekspor atas nama Ameta Novelia br Karo">
+      <div>
+        <h3 data-l="id">Yang bisa saya bantu</h3><h3 data-l="en">How I can help</h3>
+        <ul class="list" data-l="id">
+          <li><b>Riset pasar negara tujuan:</b> membaca kebijakan, budaya, dan perilaku konsumen dengan bekal studi HI.</li>
+          <li><b>Kesiapan dokumen &amp; proses ekspor</b> sesuai standar kompetensi Pelaksana Ekspor.</li>
+          <li><b>Iklan &amp; konten lintas negara:</b> targeting Meta Ads per negara dan copywriting dua bahasa (TOEFL ITP 550).</li>
+          <li><b>Kehadiran digital siap ekspor</b> untuk UMKM yang ingin dipercaya calon buyer luar negeri.</li>
+        </ul>
+        <ul class="list" data-l="en">
+          <li><b>Target-market research:</b> reading policy, culture, and consumer behaviour, grounded in IR training.</li>
+          <li><b>Export documents &amp; process readiness</b> to the Export Executor competency standard.</li>
+          <li><b>Cross-border ads &amp; content:</b> country-level Meta Ads targeting and bilingual copywriting (TOEFL ITP 550).</li>
+          <li><b>An export-ready digital presence</b> for SMEs that need to earn the trust of overseas buyers.</li>
+        </ul>
+        <p class="mono muted" style="margin-top:18px">No. 74100.2166.4.0005358.2024 · LSP UPN "Veteran" Jawa Timur · <span data-l="id">berlaku 17 Des 2024 – Des 2027</span><span data-l="en">valid 17 Dec 2024 – Dec 2027</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="sertifikasi">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="mono muted"><span data-l="id">Sertifikasi</span><span data-l="en">Certifications</span></div>
+      <div><h2 data-l="id">Pelatihan &amp; sertifikasi</h2><h2 data-l="en">Training &amp; certifications</h2></div>
+    </div>
+    <div class="cards">
+      <div class="card certimg">
+        <img src="assets/cert-myskill.jpg" alt="Sertifikat MySkill Digital Marketing Fullstack Intensive Bootcamp">
+        <div>
+          <span class="mono muted">MySkill · Mar – Mei 2026</span>
+          <h3>Digital Marketing: Fullstack Intensive Bootcamp</h3>
+          <p data-l="id">Batch 35. Kurikulum penuh dari strategi brand hingga analitik iklan berbayar.</p>
+          <p data-l="en">Batch 35. A full curriculum from brand strategy to paid-ads analytics.</p>
+          <div class="topics"><span>Facebook Ads</span><span>TikTok Ads</span><span>Google Ads</span><span>Paid Ads Optimization</span><span>SEO</span><span>Google Analytics</span><span>Content Marketing</span><span>Copywriting</span><span>Social Media Analytics</span><span>E-commerce</span><span>CRM</span><span>Influencer Marketing</span></div>
+        </div>
+      </div>
+      <div class="card">
+        <span class="mono muted">BNSP · 2024 – 2027</span>
+        <h3 data-l="id">Pelaksana Ekspor</h3><h3 data-l="en">Export Executor</h3>
+        <p data-l="id">Sertifikat kompetensi nasional, bidang Koperasi dan Usaha Kecil &amp; Menengah.</p>
+        <p data-l="en">National competency certificate, Cooperatives and Small &amp; Medium Enterprises.</p>
+      </div>
+      <div class="card">
+        <span class="mono muted">RevoU · 2025</span>
+        <h3>Digital Marketing</h3>
+        <p data-l="id">Program pelatihan digital marketing.</p>
+        <p data-l="en">Digital marketing training program.</p>
+      </div>
+      <div class="card">
+        <span class="mono muted">Universitas Airlangga · 2025 – 2027</span>
+        <h3>TOEFL ITP 550</h3>
+        <p data-l="id">Bahasa Inggris untuk komunikasi kerja, copywriting, dan riset.</p>
+        <p data-l="en">Working English for communication, copywriting, and research.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="pengalaman" class="page-break">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="mono muted"><span data-l="id">Perjalanan</span><span data-l="en">Track record</span></div>
+      <div><h2 data-l="id">Pengalaman, pendidikan &amp; riset</h2><h2 data-l="en">Experience, education &amp; research</h2></div>
+    </div>
+    <div class="tl">
+      <div class="tl-row"><div class="mono muted">06/2026 – <span data-l="id">kini</span><span data-l="en">now</span></div><div><h3>Meta Ads Specialist · F2C Furniture</h3><p data-l="id">Perencanaan, eksekusi, dan optimasi kampanye Facebook &amp; Instagram untuk brand furnitur dengan 14 cabang.</p><p data-l="en">Planning, running, and optimizing Facebook &amp; Instagram campaigns for a furniture brand with 14 branches.</p></div></div>
+      <div class="tl-row"><div class="mono muted">01 – 05/2025</div><div><h3>Digital Marketing Intern · Jejak Pemuda</h3><p data-l="id">Kalender konten, desain grafis, caption, dan analitik kampanye.</p><p data-l="en">Content calendar, graphic design, captions, and campaign analytics.</p></div></div>
+      <div class="tl-row"><div class="mono muted">11/2024</div><div><h3 data-l="id">Magang Divisi HAM · Kemenkumham Kanwil Jawa Timur</h3><h3 data-l="en">Human Rights Division Intern · Ministry of Law &amp; Human Rights, East Java</h3><p data-l="id">Riset perjanjian internasional dan legislasi, penyusunan laporan, dukungan lokakarya.</p><p data-l="en">Research on international treaties and legislation, report writing, workshop support.</p></div></div>
+      <div class="tl-row"><div class="mono muted">2020 – 2022</div><div><h3>Lyrics Curator · Musixmatch</h3><p data-l="id">Kurasi konten multibahasa dan metadata dengan standar akurasi tinggi.</p><p data-l="en">Curated multilingual content and metadata to strict accuracy standards.</p></div></div>
+      <div class="tl-row"><div class="mono muted">2021 – 2025</div><div><h3 data-l="id">S1 Hubungan Internasional · UPN "Veteran" Jawa Timur</h3><h3 data-l="en">B.Soc.Sc. International Relations · UPN "Veteran" East Java</h3><p data-l="id">IPK 3,84. Fokus diplomasi global, ekonomi politik, dan resolusi konflik.</p><p data-l="en">GPA 3.84. Focus on global diplomacy, political economy, and conflict resolution.</p></div></div>
+      <div class="tl-row"><div class="mono muted" data-l="id">Publikasi</div><div class="mono muted" data-l="en">Publications</div><div>
+        <p><b>The Boomerang Mechanism in Human Rights Advocacy: Baloch Long March Against China</b> · Pena Wimaya Journal, 2025</p>
+        <p><b>From Local Struggle to Global Cause: Framing Strategies in the Baloch Long March Movement</b> · Spektrum Journal, 2025</p>
+        <p><b>Navigating Cultural Diversity: Bridging Societal Gaps Through International Cooperation</b> · Universitas Sebelas Maret, 2024</p>
+        <p style="margin-top:6px" data-l="id">Presenter di 4th International Conference on Humanities and Social Science (ICHSS), UNS, 2024.</p>
+        <p style="margin-top:6px" data-l="en">Presenter at the 4th International Conference on Humanities and Social Science (ICHSS), UNS, 2024.</p>
+      </div></div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="keahlian">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="mono muted"><span data-l="id">Keahlian</span><span data-l="en">Skills</span></div>
+      <div><h2 data-l="id">Alat &amp; keahlian</h2><h2 data-l="en">Tools &amp; skills</h2></div>
+    </div>
+    <div class="skills">
+      <div><h3 data-l="id">Iklan berbayar</h3><h3 data-l="en">Paid media</h3>
+        <ul data-l="id"><li>Meta Ads Manager</li><li>Kampanye click-to-message</li><li>A/B testing creative &amp; copy</li><li>Optimasi anggaran per wilayah</li></ul>
+        <ul data-l="en"><li>Meta Ads Manager</li><li>Click-to-message campaigns</li><li>Creative &amp; copy A/B testing</li><li>Regional budget optimization</li></ul></div>
+      <div><h3 data-l="id">Konten &amp; sosial</h3><h3 data-l="en">Content &amp; social</h3>
+        <ul data-l="id"><li>Kalender konten</li><li>Copywriting ID / EN</li><li>Desain grafis di Canva</li><li>Konsep video pendek TikTok</li></ul>
+        <ul data-l="en"><li>Content calendars</li><li>ID / EN copywriting</li><li>Graphic design in Canva</li><li>Short-form TikTok concepts</li></ul></div>
+      <div><h3 data-l="id">Analisis &amp; komunikasi</h3><h3 data-l="en">Analysis &amp; communication</h3>
+        <ul data-l="id"><li>Pelaporan performa iklan</li><li>Riset pasar &amp; kebijakan</li><li>Presentasi publik</li><li>Koordinasi pemangku kepentingan</li></ul>
+        <ul data-l="en"><li>Ad performance reporting</li><li>Market &amp; policy research</li><li>Public speaking</li><li>Stakeholder coordination</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="kontak" class="contact">
+  <div class="wrap">
+    <span class="mono muted" data-l="id">Kontak</span><span class="mono muted" data-l="en">Contact</span>
+    <h2 style="margin-top:12px" data-l="id">Butuh iklan yang menghasilkan chat, atau brand yang siap ke luar negeri?</h2>
+    <h2 style="margin-top:12px" data-l="en">Need ads that bring in chats, or a brand ready to go abroad?</h2>
+    <div class="contact-grid">
+      <div><span class="mono muted">Email</span><br><a href="mailto:ametanoveliabrkaro@gmail.com">ametanoveliabrkaro@gmail.com</a></div>
+      <div><span class="mono muted">WhatsApp</span><br><a href="https://wa.me/6285381230405">+62 853 8123 0405</a></div>
+      <div><span class="mono muted">LinkedIn</span><br><a href="https://www.linkedin.com/in/ameta-novelia-br-karo-99184b366/">in/ameta-novelia-br-karo</a></div>
+    </div>
+    <p class="mono muted" style="margin-top:36px">Medan, Indonesia</p>
+  </div>
+</section>
+</main>
+
+<script>
+(function(){
+  var root=document.documentElement;
+  function setLang(l, updateHash){
+    l = (l==='en') ? 'en' : 'id';
+    root.lang = l;
+    document.getElementById('btn-id').setAttribute('aria-pressed', String(l==='id'));
+    document.getElementById('btn-en').setAttribute('aria-pressed', String(l==='en'));
+    document.title = l==='en' ? 'Ameta Novelia Portfolio' : 'Portofolio Ameta Novelia';
+    if(updateHash){ try{ location.hash = l; }catch(e){} }
+  }
+  document.querySelectorAll('.lang button').forEach(function(b){
+    b.addEventListener('click', function(){ setLang(b.dataset.set, true); });
+  });
+  function fromHash(){ var h=(location.hash||'').slice(1); if(h==='en'||h==='id') setLang(h,false); }
+  window.addEventListener('hashchange', fromHash);
+  setLang('id', false); fromHash();
+})();
+</script>
+</body>
+</html>
