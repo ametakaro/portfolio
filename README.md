@@ -7,3 +7,7 @@ Website portofolio digital marketing (Meta Ads, media sosial, ekspor) dalam baha
 - PDF: `Portofolio_Ameta_Novelia_ID.pdf` dan `Portofolio_Ameta_Novelia_EN.pdf`
 
 Dihosting dengan GitHub Pages.
+
+## Versi jurnalis
+
+Halaman `/jurnalis/` berisi portofolio untuk posisi Journalist: pemetaan kebutuhan posisi, tiga publikasi, dan pengalaman menulis. PDF ada di folder yang sama.

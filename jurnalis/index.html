@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Portofolio menulis Ameta Novelia br Karo: riset, publikasi, dan konten digital untuk posisi jurnalis.">
+<title>Portofolio Jurnalis Ameta Novelia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Figtree:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+
+/* Plan: a shipping-manifest motif (mono metadata lines, one customs-style stamp) carrying a digital-marketing case-study page. Left-aligned single column, ledger-style data rows. */
+:root{
+  --paper:#F3F4F1;
+  --surface:#FFFFFF;
+  --ink:#14212B;
+  --muted:#56636D;
+  --line:#D6DBD6;
+  --accent:#F2B705;
+  --accent-soft:rgba(242,183,5,.42);
+  --stamp:#C2412A;
+  --display:'Bricolage Grotesque','Arial Narrow',Arial,sans-serif;
+  --body:'Figtree',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --mono:'IBM Plex Mono',ui-monospace,Menlo,Consolas,monospace;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#0E161C; --surface:#152029; --ink:#E8ECE6; --muted:#98A5AD; --line:#283640;
+    --accent:#F2B705; --accent-soft:rgba(242,183,5,.30); --stamp:#E8705A; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0E161C; --surface:#152029; --ink:#E8ECE6; --muted:#98A5AD; --line:#283640;
+  --accent:#F2B705; --accent-soft:rgba(242,183,5,.30); --stamp:#E8705A; color-scheme:dark;
+}
+
+html[lang="id"] [data-l="en"], html[lang="en"] [data-l="id"]{display:none !important}
+
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+h1,h2,h3{font-family:var(--display);line-height:1.08;margin:0;text-wrap:balance;letter-spacing:-.01em}
+p{margin:0}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+.mono{font-family:var(--mono);font-size:12.5px;letter-spacing:.06em;text-transform:uppercase}
+.muted{color:var(--muted)}
+.hl{background:linear-gradient(transparent 58%,var(--accent-soft) 58%);padding:0 .08em}
+.num{font-variant-numeric:tabular-nums}
+
+/* top bar */
+.bar{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--paper) 92%,transparent);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+.bar .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:56px}
+.bar nav{display:flex;gap:20px;flex-wrap:wrap}
+.bar nav a{text-decoration:none;color:var(--muted)}
+.bar nav a:hover{color:var(--ink)}
+.lang{display:flex;border:1px solid var(--ink);border-radius:999px;overflow:hidden;flex:none}
+.lang button{font:500 12.5px/1 var(--mono);letter-spacing:.08em;background:transparent;color:var(--ink);border:0;padding:8px 14px;cursor:pointer}
+.lang button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+
+/* hero */
+.hero{padding:64px 0 40px;position:relative}
+.manifest{display:flex;flex-wrap:wrap;gap:0;border-top:1px solid var(--ink);border-bottom:1px solid var(--ink)}
+.manifest div{padding:10px 18px 10px 0;margin-right:18px;border-right:1px solid var(--line)}
+.manifest div:last-child{border-right:0}
+.manifest b{display:block;font-weight:500;color:var(--muted);font-size:11px}
+.hero h1{font-size:clamp(44px,8.4vw,104px);font-weight:800;letter-spacing:-.035em;margin:36px 0 22px;max-width:11ch}
+.hero .thesis{font-family:var(--display);font-weight:400;font-size:clamp(22px,2.7vw,31px);line-height:1.3;max-width:30ch}
+.hero .sub{margin-top:20px;max-width:58ch;color:var(--muted)}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 20px;border-radius:999px;text-decoration:none;font-weight:600;border:1.5px solid var(--ink)}
+.btn.primary{background:var(--ink);color:var(--paper)}
+.btn:hover{transform:translateY(-1px)}
+.stamp{position:absolute;right:8px;top:118px;transform:rotate(-8deg);border:2.5px solid var(--stamp);color:var(--stamp);padding:12px 16px 10px;border-radius:6px;text-align:center;font-family:var(--mono);text-transform:uppercase;letter-spacing:.1em;font-size:11px;line-height:1.5;opacity:.92;mix-blend-mode:multiply}
+:root[data-theme="dark"] .stamp{mix-blend-mode:normal}
+.stamp strong{display:block;font-family:var(--display);font-size:22px;letter-spacing:.02em;line-height:1.1;margin:2px 0}
+@media (prefers-reduced-motion:no-preference){
+  .stamp{animation:thump .55s cubic-bezier(.2,.9,.3,1.3) .35s both}
+  @keyframes thump{from{transform:rotate(-8deg) scale(1.5);opacity:.35}to{transform:rotate(-8deg) scale(1);opacity:.92}}
+}
+
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(5,1fr);gap:0;margin-top:48px;border-top:1px solid var(--line)}
+.stat{padding:18px 16px 18px 0;border-right:1px solid var(--line)}
+.stat + .stat{padding-left:16px}
+.stat:last-child{border-right:0}
+.stat .v{font-family:var(--display);font-weight:800;font-size:clamp(26px,3.2vw,40px);line-height:1;letter-spacing:-.02em}
+.stat .k{margin-top:8px;font-size:14px;color:var(--muted);line-height:1.35}
+.src{margin-top:10px;font-size:11px}
+
+/* sections */
+section{padding:72px 0;border-top:1px solid var(--line)}
+.sec-head{display:grid;grid-template-columns:200px 1fr;gap:24px;margin-bottom:36px}
+.sec-head .mono{padding-top:10px}
+.sec-head h2{font-size:clamp(30px,4.2vw,50px);font-weight:800}
+.sec-head p{margin-top:14px;max-width:60ch;color:var(--muted)}
+.body-grid{display:grid;grid-template-columns:200px 1fr;gap:24px}
+.body-grid > :first-child{grid-column:2}
+
+.facts{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 28px}
+.chip{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:5px 12px;font-size:14px}
+
+.two{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+.list{margin:0;padding:0;list-style:none;display:grid;gap:12px}
+.list li{position:relative;padding-left:26px}
+.list li::before{content:"";position:absolute;left:0;top:.55em;width:10px;height:10px;background:var(--accent);border-radius:2px}
+h3{font-size:22px;font-weight:600;margin-bottom:12px}
+
+/* ledger chart */
+.ledger{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:22px 22px 14px;margin-top:36px;overflow-x:auto}
+.ledger-title{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:16px}
+.ledger-title h3{margin:0;font-size:19px}
+.ledger table{width:100%;border-collapse:collapse;min-width:680px;font-variant-numeric:tabular-nums}
+.ledger th{font:500 11px/1.3 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);text-align:right;padding:6px 10px;border-bottom:1px solid var(--line);vertical-align:bottom}
+.ledger th:first-child,.ledger td:first-child{text-align:left;padding-left:0}
+.ledger td{padding:9px 10px;border-bottom:1px solid var(--line);text-align:right;font-size:15px;white-space:nowrap}
+.ledger tr:last-child td{border-bottom:0}
+.ledger td.barcell{width:38%;padding-right:0}
+.ledger th.barcell{text-align:left}
+.track{position:relative;height:20px}
+.fill{position:absolute;left:0;top:3px;height:14px;background:var(--muted);opacity:.35;border-radius:0 3px 3px 0}
+.best .fill{background:var(--accent);opacity:1}
+.avg{position:absolute;top:-4px;bottom:-4px;width:0;border-left:1.5px dashed var(--ink)}
+.barval{position:absolute;top:0;font-size:13px;line-height:20px;padding-left:6px;color:var(--ink)}
+.axis{display:flex;justify-content:space-between;position:relative;height:16px}
+.axis span{position:absolute;transform:translateX(-50%);font-size:11px;color:var(--muted);font-family:var(--mono)}
+tr.best td:first-child{font-weight:600}
+.legend{display:flex;gap:18px;flex-wrap:wrap;font-size:13px;color:var(--muted);margin-top:12px}
+.legend i{display:inline-block;width:12px;height:10px;border-radius:2px;margin-right:6px;vertical-align:middle}
+
+/* insights */
+.insights{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:20px}
+.insight{border-top:3px solid var(--ink);padding-top:14px}
+.insight.next{border-top-color:var(--stamp)}
+.insight .big{font-family:var(--display);font-weight:800;font-size:30px;line-height:1.05;margin:6px 0 8px}
+.insight p{font-size:15.5px;color:var(--muted)}
+
+/* gallery */
+.pillars{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.pillar{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:16px}
+.pillar h3{font-size:17px;margin:6px 0}
+.pillar p{font-size:14.5px;color:var(--muted)}
+.pillar .eg{margin-top:10px;font-size:13.5px;font-style:italic;color:var(--ink)}
+.shots{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:22px}
+.shots figure{margin:0}
+.shots img{border-radius:8px;border:1px solid var(--line);width:100%;aspect-ratio:9/8;object-fit:cover;object-position:top}
+.shots figcaption{font-size:12px;margin-top:6px}
+
+/* cards */
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:20px}
+.card h3{font-size:19px;margin:4px 0 6px}
+.card p{font-size:15.5px;color:var(--muted)}
+.card .topics{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.card .topics span{font-size:12.5px;border:1px solid var(--line);border-radius:999px;padding:2px 9px;color:var(--muted)}
+.certimg{display:grid;grid-template-columns:150px 1fr;gap:18px;align-items:start}
+.certimg img{border-radius:6px;border:1px solid var(--line)}
+
+.export{display:grid;grid-template-columns:260px 1fr;gap:32px;align-items:start}
+.export img{border-radius:8px;border:1px solid var(--line);box-shadow:0 10px 30px -18px rgba(0,0,0,.45);transform:rotate(-1.5deg)}
+
+/* timeline */
+.tl{display:grid;gap:0}
+.tl-row{display:grid;grid-template-columns:200px 1fr;gap:24px;padding:18px 0;border-bottom:1px solid var(--line)}
+.tl-row:last-child{border-bottom:0}
+.tl-row h3{font-size:19px;margin:0 0 4px}
+.tl-row p{font-size:15.5px;color:var(--muted)}
+
+.skills{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.skills ul{margin:8px 0 0;padding-left:18px;font-size:15.5px}
+
+/* contact */
+.contact{background:var(--ink);color:var(--paper);border-top:0}
+.contact .muted{color:color-mix(in srgb,var(--paper) 70%,transparent)}
+.contact h2{font-size:clamp(34px,5vw,60px);font-weight:800;max-width:16ch}
+.contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:36px}
+.contact-grid a{text-decoration:none;font-size:18px;font-weight:600;word-break:break-word}
+.contact-grid a:hover{text-decoration:underline;text-decoration-color:var(--accent);text-decoration-thickness:2px}
+footer{padding:22px 0;font-size:12px}
+
+@media screen and (max-width:900px){
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .stat{border-right:0;border-bottom:1px solid var(--line);padding-left:0 !important}
+  .sec-head,.body-grid,.tl-row{grid-template-columns:1fr;gap:8px}
+  .body-grid > :first-child{grid-column:auto}
+  .insights,.two,.cards,.skills,.contact-grid{grid-template-columns:1fr}
+  .pillars,.shots{grid-template-columns:repeat(2,1fr)}
+  .export{grid-template-columns:1fr}
+  .export img{max-width:240px}
+  .stamp{position:static;display:inline-block;margin-top:20px}
+  .bar nav{display:none}
+}
+@media screen and (max-width:420px){ .wrap{padding:0 16px} .pillars,.shots{grid-template-columns:1fr 1fr} .certimg{grid-template-columns:1fr} }
+
+/* print / PDF */
+@page{size:A4;margin:14mm 13mm}
+@media print{
+  :root,:root[data-theme="dark"]{--paper:#FFFFFF;--surface:#FFFFFF;--ink:#14212B;--muted:#56636D;--line:#D6DBD6;--accent:#F2B705;--accent-soft:rgba(242,183,5,.42);--stamp:#C2412A;color-scheme:light}
+  *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  body{font-size:12.5px}
+  .bar,.cta{display:none}
+  .wrap{max-width:none;padding:0}
+  .hero{padding:4px 0 12px}
+  .hero h1{font-size:58px;margin:22px 0 14px}
+  .hero .thesis{font-size:20px}
+  .stamp{top:72px;animation:none}
+  .stats{margin-top:24px}
+  .stat .v{font-size:26px}
+  section{padding:26px 0;break-before:auto}
+  .sec-head{grid-template-columns:120px 1fr;margin-bottom:18px}
+  .sec-head h2{font-size:28px}
+  .body-grid,.tl-row{grid-template-columns:120px 1fr}
+  .ledger table{min-width:0}
+  .ledger td{font-size:11.5px;padding:6px 8px}
+  .ledger,.insight,.pillar,.card,.tl-row,.shots figure,.export,.skills > div{break-inside:avoid}
+  .insight .big{font-size:22px}
+  .shots img{aspect-ratio:9/8}
+  .page-break{break-before:auto}
+  .sec-head{break-after:avoid;break-inside:avoid}
+  #jejak-pemuda,#keahlian,#kontak{break-inside:avoid}
+  .certimg{grid-column:1/-1}
+  .ledger-title{break-after:avoid}
+  .contact{background:#FFFFFF;color:#14212B;border-top:2px solid #14212B}
+  .contact .muted{color:#56636D}
+  .contact h2{font-size:30px}
+  .contact-grid a{font-size:13px}
+  .print-only{display:block !important}
+}
+.print-only{display:none}
+
+/* journalism additions: requirement-to-evidence ledger and publication cards */
+.fit{width:100%;border-collapse:collapse}
+.fit th{font:500 11px/1.3 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);text-align:left;padding:8px 12px 8px 0;border-bottom:1.5px solid var(--ink)}
+.fit td{padding:14px 12px 14px 0;border-bottom:1px solid var(--line);vertical-align:top;font-size:15.5px}
+.fit td:first-child{width:30%;font-family:var(--display);font-weight:600;font-size:17px;line-height:1.25}
+.fit td:first-child small{display:block;font:500 11px/1.4 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-top:4px}
+.fit tr.plus td:first-child{color:var(--stamp)}
+.pubs{display:grid;gap:18px}
+.pub{display:grid;grid-template-columns:200px 1fr;gap:24px;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:22px}
+.pub .meta{font-family:var(--mono);font-size:12px;letter-spacing:.04em;color:var(--muted);line-height:1.6}
+.pub .meta b{display:block;font-family:var(--display);font-size:20px;letter-spacing:0;color:var(--ink);margin-bottom:6px}
+.pub h3{font-size:22px;line-height:1.2;margin-bottom:10px}
+.pub p{font-size:15.5px;color:var(--muted);max-width:68ch}
+.pub p + p{margin-top:8px}
+.pub .angle{margin-top:12px;display:inline-block;font-size:13.5px;background:var(--accent-soft);padding:3px 10px;border-radius:4px;color:var(--ink)}
+.pub a.read{display:inline-block;margin-top:12px;margin-left:10px;font-weight:600;font-size:14.5px}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;counter-reset:s}
+.step{border-top:3px solid var(--ink);padding-top:12px}
+.step h3{font-size:18px;margin:4px 0 6px}
+.step p{font-size:15px;color:var(--muted)}
+.backlink{font-size:14px}
+@media screen and (max-width:900px){ .pub{grid-template-columns:1fr;gap:10px} .steps{grid-template-columns:1fr 1fr} .fit td:first-child{width:38%} }
+@media screen and (max-width:520px){ .fit thead{display:none} .fit tr{display:block;border-bottom:1px solid var(--line);padding:10px 0} .fit td{display:block;border:0;padding:2px 0;width:auto !important} .steps{grid-template-columns:1fr} }
+@media print{ .pub{grid-template-columns:150px 1fr;padding:14px} .pub h3{font-size:16px} .pub p,.fit td{font-size:11.5px} .fit td:first-child{font-size:13px} .fit tr,.pub,.step{break-inside:avoid} .steps{grid-template-columns:repeat(4,1fr)} .backlink{display:none} }
+</style>
+</head>
+<body>
+
+<header class="bar">
+  <div class="wrap">
+    <a href="#top" class="mono" style="text-decoration:none">Ameta Novelia br Karo</a>
+    <nav class="mono" aria-label="Sections">
+      <a href="#kesesuaian"><span data-l="id">Kesesuaian</span><span data-l="en">Fit</span></a>
+      <a href="#publikasi"><span data-l="id">Publikasi</span><span data-l="en">Publications</span></a>
+      <a href="#pengalaman"><span data-l="id">Pengalaman</span><span data-l="en">Experience</span></a>
+      <a href="#kontak"><span data-l="id">Kontak</span><span data-l="en">Contact</span></a>
+    </nav>
+    <div class="lang" role="group" aria-label="Bahasa / Language">
+      <button type="button" id="btn-id" aria-pressed="true" data-set="id">ID</button>
+      <button type="button" id="btn-en" aria-pressed="false" data-set="en">EN</button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+<div class="wrap hero">
+  <div class="manifest mono">
+    <div><b data-l="id">Asal</b><b data-l="en">Based in</b>Medan, ID</div>
+    <div><b data-l="id">Posisi</b><b data-l="en">Applying as</b>Journalist</div>
+    <div><b data-l="id">Fokus</b><b data-l="en">Focus</b><span data-l="id">Riset · Penulisan · Konten digital</span><span data-l="en">Research · Writing · Digital content</span></div>
+    <div><b data-l="id">Bahasa</b><b data-l="en">Languages</b>ID / EN</div>
+  </div>
+
+  <div class="stamp" aria-label="3 publications, 2024 to 2025">
+    <span data-l="id">Terbit</span><span data-l="en">Published</span>
+    <strong data-l="id">3 Publikasi</strong><strong data-l="en">3 Papers</strong>
+    2024 – 2025
+  </div>
+
+  <h1>Ameta Novelia br Karo</h1>
+  <p class="thesis" data-l="id">Saya menulis dari <span class="hl">data yang sudah diverifikasi</span>, lalu menyajikannya agar mudah dipahami dan sampai ke pembaca yang tepat.</p>
+  <p class="thesis" data-l="en">I write from <span class="hl">verified data</span>, then shape it so it is easy to follow and reaches the right readers.</p>
+  <p class="sub" data-l="id">Sarjana Hubungan Internasional (IPK 3,84) dengan tiga publikasi ilmiah tentang advokasi HAM, framing media, dan komunikasi lintas budaya. Saat ini bekerja sebagai Meta Ads Specialist, sehingga paham cara konten didistribusikan dan diukur di platform digital.</p>
+  <p class="sub" data-l="en">International Relations graduate (GPA 3.84) with three published papers on human rights advocacy, media framing, and cross-cultural communication. Currently a Meta Ads Specialist, so I know how content is distributed and measured on digital platforms.</p>
+  <div class="cta">
+    <a class="btn primary" href="#publikasi"><span data-l="id">Baca publikasi</span><span data-l="en">Read publications</span> ↓</a>
+    <a class="btn" href="#kontak"><span data-l="id">Hubungi saya</span><span data-l="en">Get in touch</span></a>
+    <a class="btn" href="Portofolio_Jurnalis_Ameta_Novelia_ID.pdf" download data-l="id">Unduh PDF</a>
+    <a class="btn" href="Portofolio_Jurnalis_Ameta_Novelia_EN.pdf" download data-l="en">Download PDF</a>
+  </div>
+
+  <div class="stats">
+    <div class="stat"><div class="v num">3</div><div class="k" data-l="id">publikasi ilmiah, 2024–2025</div><div class="k" data-l="en">published papers, 2024–2025</div></div>
+    <div class="stat"><div class="v num">24</div><div class="k" data-l="id">halaman artikel jurnal Spektrum (hlm. 304–327)</div><div class="k" data-l="en">pages in the Spektrum journal article (pp. 304–327)</div></div>
+    <div class="stat"><div class="v num">550</div><div class="k" data-l="id">skor TOEFL ITP</div><div class="k" data-l="en">TOEFL ITP score</div></div>
+    <div class="stat"><div class="v num">14,7 jt</div><div class="k" data-l="id">impresi konten iklan yang saya kelola</div><div class="k" data-l="en">ad impressions I have managed</div></div>
+    <div class="stat"><div class="v num">BNSP</div><div class="k" data-l="id">Pelaksana Ekspor: paham alur pengiriman barang</div><div class="k" data-l="en">Export Executor: I know how goods get shipped</div></div>
+  </div>
+  <p class="src mono muted backlink"><a href="../"><span data-l="id">Lihat juga portofolio digital marketing saya →</span><span data-l="en">See my digital marketing portfolio →</span></a></p>
+</div>
+
+<!-- FIT -->
+<section id="kesesuaian">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="mono muted"><span data-l="id">Kesesuaian</span><span data-l="en">Role fit</span></div>
+      <div>
+        <h2 data-l="id">Yang dibutuhkan posisi ini, dan buktinya</h2>
+        <h2 data-l="en">What the role needs, and my evidence</h2>
+        <p data-l="id">Setiap baris di bawah memasangkan satu kebutuhan posisi Journalist dengan pengalaman yang bisa dicek.</p>
+        <p data-l="en">Each row pairs one requirement of the Journalist role with experience you can check.</p>
+      </div>
+    </div>
+    <table class="fit">
+      <thead><tr><th data-l="id">Kebutuhan</th><th data-l="en">Requirement</th><th data-l="id">Bukti</th><th data-l="en">Evidence</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><span data-l="id">Riset &amp; verifikasi data</span><span data-l="en">Research &amp; data verification</span></td>
+          <td><span data-l="id">Tiga publikasi berbasis analisis isi atas unggahan media sosial, materi kampanye, pernyataan publik, dan liputan pers. Di Kemenkumham Jawa Timur, saya meriset perjanjian internasional dan legislasi untuk bahan laporan.</span><span data-l="en">Three papers built on content analysis of social media posts, campaign materials, public statements, and press coverage. At the East Java Ministry of Law and Human Rights, I researched international treaties and legislation for official reports.</span></td>
+        </tr>
+        <tr>
+          <td><span data-l="id">Artikel terstruktur &amp; digital storytelling</span><span data-l="en">Structured articles &amp; digital storytelling</span></td>
+          <td><span data-l="id">Artikel jurnal 24 halaman yang menyusun isu rumit menjadi alur yang runtut. Menulis caption dan konten kampanye digital untuk Jejak Pemuda, serta copywriting iklan untuk F2C Furniture.</span><span data-l="en">A 24-page journal article that turns a complex issue into a clear narrative. Wrote captions and campaign content for Jejak Pemuda, and ad copy for F2C Furniture.</span></td>
+        </tr>
+        <tr>
+          <td><span data-l="id">Hadir di konferensi &amp; acara</span><span data-l="en">Conferences &amp; events</span></td>
+          <td><span data-l="id">Presenter di 4th International Conference on Humanities and Social Science (ICHSS), Universitas Sebelas Maret, 2024. Mendukung pelaksanaan lokakarya Divisi HAM Kemenkumham Jawa Timur.</span><span data-l="en">Presenter at the 4th International Conference on Humanities and Social Science (ICHSS), Universitas Sebelas Maret, 2024. Supported workshops run by the East Java human rights division.</span></td>
+        </tr>
+        <tr>
+          <td><span data-l="id">Relasi dengan narasumber</span><span data-l="en">Source relationships</span></td>
+          <td><span data-l="id">Bekerja dengan tim program LSM, instansi pemerintah, dan tim kreatif perusahaan.</span><span data-l="en">Worked with NGO program teams, a government office, and a company creative team.</span></td>
+        </tr>
+        <tr>
+          <td><span data-l="id">Bahasa Indonesia baku &amp; ketelitian teks</span><span data-l="en">Standard Indonesian &amp; text accuracy</span></td>
+          <td><span data-l="id">Dua tahun sebagai kurator lirik di Musixmatch (2020–2022): menyunting teks dan metadata multibahasa dengan standar akurasi yang ketat. Menulis laporan resmi di lingkungan pemerintahan.</span><span data-l="en">Two years as a lyrics curator at Musixmatch (2020–2022), editing multilingual text and metadata to strict accuracy standards. Wrote official reports in a government setting.</span></td>
+        </tr>
+        <tr>
+          <td><span data-l="id">Website, media sosial &amp; distribusi konten</span><span data-l="en">Web, social &amp; content distribution</span></td>
+          <td><span data-l="id">Mengelola 8 kampanye Meta Ads regional dengan 14,7 juta impresi dan 17.089 kontak pesan. Menyusun kalender konten dan membaca analitik untuk Jejak Pemuda.</span><span data-l="en">Run 8 regional Meta Ads campaigns with 14.7 million impressions and 17,089 messaging contacts. Planned the content calendar and read analytics for Jejak Pemuda.</span></td>
+        </tr>
+        <tr class="plus">
+          <td><span data-l="id">Bahasa Inggris</span><span data-l="en">English</span><small data-l="id">Nilai tambah</small><small data-l="en">Plus</small></td>
+          <td><span data-l="id">TOEFL ITP 550. Menulis dan mempresentasikan karya ilmiah berbahasa Inggris, termasuk di konferensi internasional ICHSS.</span><span data-l="en">TOEFL ITP 550. I write and present academic work in English, including at the international ICHSS conference.</span></td>
+        </tr>
+        <tr class="plus">
+          <td><span data-l="id">Paham dunia logistik</span><span data-l="en">Logistics know-how</span><small data-l="id">Nilai tambah</small><small data-l="en">Plus</small></td>
+          <td><span data-l="id">Bersertifikat BNSP sebagai Pelaksana Ekspor. Saya memahami alur pengiriman barang, dokumen, dan istilah rantai pasok, sehingga bisa menulis tentang industri logistik dengan akurat.</span><span data-l="en">BNSP-certified Export Executor. I understand shipping flows, documents, and supply-chain terms, so I can write about the logistics industry accurately.</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- PUBLICATIONS -->
+<section id="publikasi" class="page-break">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="mono muted"><span data-l="id">Karya terbit</span><span data-l="en">Published work</span></div>
+      <div>
+        <h2 data-l="id">Publikasi</h2>
+        <h2 data-l="en">Publications</h2>
+        <p data-l="id">Ketiganya membahas cara sebuah isu dibingkai, disebarkan, dan sampai ke publik internasional. Ini topik yang sama dengan inti kerja jurnalistik.</p>
+        <p data-l="en">All three look at how an issue is framed, spread, and carried to an international audience, which is the core of journalism.</p>
+      </div>
+    </div>
+    <div class="pubs">
+      <article class="pub">
+        <div class="meta"><b>Spektrum</b><span data-l="id">Jurnal Ilmu Politik Hubungan Internasional</span><span data-l="en">Journal of Political Science &amp; IR</span><br>Vol. 22 No. 2 · 2025<br><span data-l="id">hlm.</span><span data-l="en">pp.</span> 304–327<br><span data-l="id">Penulis tunggal</span><span data-l="en">Sole author</span></div>
+        <div>
+          <h3>From Local Struggle to Global Cause: Framing Strategies in the Baloch Long March Movement</h3>
+          <p data-l="id">Meneliti bagaimana gerakan Baloch Long March (2023–2024) membingkai perjuangan HAM lokal agar mendapat perhatian dunia. Saya memakai analisis isi kualitatif dengan model framing Snow &amp; Benford atas unggahan media sosial, materi kampanye, pernyataan publik, dan liputan pers.</p>
+          <p data-l="en">Examines how the Baloch Long March (2023–2024) framed a local human rights struggle to win global attention. I used qualitative content analysis with Snow &amp; Benford's framing model on social media posts, campaign materials, public statements, and press coverage.</p>
+          <p data-l="id">Temuannya: dengan membingkai ulang tuntutan sebagai isu HAM universal, lewat aksi yang dipimpin perempuan, poster, dan tagar, gerakan lokal bisa menggerakkan jaringan diaspora dan advokasi global.</p>
+          <p data-l="en">Finding: by reframing grievances as universal human rights issues, through women-led rallies, posters, and hashtags, a local movement mobilized diaspora networks and global advocacy.</p>
+          <span class="angle" data-l="id">Relevansi jurnalistik: analisis framing media</span><span class="angle" data-l="en">Journalism angle: media framing analysis</span>
+          <a class="read" href="https://publikasiilmiah.unwahas.ac.id/SPEKTRUM/article/view/14069"><span data-l="id">Baca artikel →</span><span data-l="en">Read article →</span></a>
+          <p class="mono muted" style="margin-top:8px;font-size:11.5px">DOI 10.31942/spektrum.v22i2.14069</p>
+        </div>
+      </article>
+      <article class="pub">
+        <div class="meta"><b>Pena Wimaya</b>UPN "Veteran" Yogyakarta<br>Vol. 5 No. 2 · 2025<br><span data-l="id">Bersama</span><span data-l="en">With</span> Muhammad Indrawan Jatmika</div>
+        <div>
+          <h3>The Boomerang Mechanism in Human Rights Advocacy: Baloch Long March Against China-Pakistan Economic Corridor</h3>
+          <p data-l="id">Saat jalur dalam negeri tertutup, aktivis Baloch Yakjehti Committee membawa tuntutan atas penghilangan paksa ke panggung internasional lewat organisasi HAM dan media global. Tekanan ini berujung pada pernyataan para pakar PBB di awal 2025. Artikel ini membacanya dengan model "boomerang" advokasi transnasional.</p>
+          <p data-l="en">With domestic channels blocked, Baloch Yakjehti Committee activists took their demands over enforced disappearances to the world stage through rights groups and global media, prompting statements from UN experts in early 2025. The article reads this through the "boomerang" model of transnational advocacy.</p>
+          <span class="angle" data-l="id">Relevansi jurnalistik: peran media global dalam advokasi</span><span class="angle" data-l="en">Journalism angle: the role of global media in advocacy</span>
+          <a class="read" href="https://garuda.kemdiktisaintek.go.id/documents/detail/5737813"><span data-l="id">Lihat di Garuda →</span><span data-l="en">View on Garuda →</span></a>
+        </div>
+      </article>
+      <article class="pub">
+        <div class="meta"><b>ICHSS 2024</b><span data-l="id">Prosiding</span><span data-l="en">Proceedings</span>, 4th International Conference of Humanities and Social Science<br><span data-l="id">hlm.</span><span data-l="en">pp.</span> 96–103<br><span data-l="id">Penulis &amp; presenter</span><span data-l="en">Author &amp; presenter</span></div>
+        <div>
+          <h3>Navigating Cultural Diversity: Bridging Societal Gaps Through International Cooperation</h3>
+          <p data-l="id">Membahas bagaimana pemahaman lintas budaya memperkuat kerja sama internasional, dan bagaimana diplomasi budaya, pendidikan, serta kegiatan bersama membangun kepercayaan antarmasyarakat.</p>
+          <p data-l="en">Discusses how cross-cultural understanding strengthens international cooperation, and how cultural diplomacy, education, and joint activities build trust between communities.</p>
+          <span class="angle" data-l="id">Relevansi jurnalistik: komunikasi lintas budaya</span><span class="angle" data-l="en">Journalism angle: cross-cultural communication</span>
+          <a class="read" href="https://programdoktorpbiuns.org/index.php/proceedings/article/view/349"><span data-l="id">Baca makalah →</span><span data-l="en">Read paper →</span></a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="cara-kerja">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="mono muted"><span data-l="id">Cara kerja</span><span data-l="en">How I work</span></div>
+      <div><h2 data-l="id">Dari bahan mentah sampai tulisan terbit</h2><h2 data-l="en">From raw material to published piece</h2></div>
+    </div>
+    <div class="steps">
+      <div class="step"><span class="mono muted">01</span><h3 data-l="id">Kumpulkan</h3><h3 data-l="en">Gather</h3><p data-l="id">Data dari dokumen resmi, pernyataan publik, media sosial, dan wawancara.</p><p data-l="en">Data from official documents, public statements, social media, and interviews.</p></div>
+      <div class="step"><span class="mono muted">02</span><h3 data-l="id">Verifikasi</h3><h3 data-l="en">Verify</h3><p data-l="id">Cek silang ke lebih dari satu sumber sebelum angka atau kutipan dipakai.</p><p data-l="en">Cross-check against more than one source before a figure or quote is used.</p></div>
+      <div class="step"><span class="mono muted">03</span><h3 data-l="id">Susun</h3><h3 data-l="en">Structure</h3><p data-l="id">Tentukan sudut cerita, lalu tulis dengan bahasa yang jelas dan sesuai EYD.</p><p data-l="en">Choose the angle, then write in clear, standard Indonesian.</p></div>
+      <div class="step"><span class="mono muted">04</span><h3 data-l="id">Distribusikan</h3><h3 data-l="en">Distribute</h3><p data-l="id">Sesuaikan judul dan format untuk web dan media sosial, lalu pantau jangkauannya.</p><p data-l="en">Adapt headlines and formats for web and social, then track reach.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="pengalaman" class="page-break">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="mono muted"><span data-l="id">Perjalanan</span><span data-l="en">Track record</span></div>
+      <div><h2 data-l="id">Pengalaman &amp; pendidikan</h2><h2 data-l="en">Experience &amp; education</h2></div>
+    </div>
+    <div class="tl">
+      <div class="tl-row"><div class="mono muted">06/2026 – <span data-l="id">kini</span><span data-l="en">now</span></div><div><h3>Meta Ads Specialist · F2C Furniture</h3><p data-l="id">Kampanye Facebook &amp; Instagram untuk brand furnitur dengan 14 cabang. Menulis copy iklan, menguji variasi pesan, dan membuat laporan performa.</p><p data-l="en">Facebook &amp; Instagram campaigns for a furniture brand with 14 branches. Writing ad copy, testing message variants, and reporting on performance.</p></div></div>
+      <div class="tl-row"><div class="mono muted">01 – 05/2025</div><div><h3>Digital Marketing Intern · Jejak Pemuda</h3><p data-l="id">Kalender konten, caption, desain grafis, dan evaluasi kampanye berbasis analitik untuk LSM kepemudaan.</p><p data-l="en">Content calendar, captions, graphics, and analytics-based campaign reviews for a youth NGO.</p></div></div>
+      <div class="tl-row"><div class="mono muted">11/2024</div><div><h3 data-l="id">Magang Divisi HAM · Kemenkumham Kanwil Jawa Timur</h3><h3 data-l="en">Human Rights Division Intern · Ministry of Law &amp; Human Rights, East Java</h3><p data-l="id">Riset perjanjian internasional dan legislasi, penulisan laporan, dan dukungan lokakarya.</p><p data-l="en">Research on international treaties and legislation, report writing, and workshop support.</p></div></div>
+      <div class="tl-row"><div class="mono muted">2020 – 2022</div><div><h3>Lyrics Curator · Musixmatch</h3><p data-l="id">Menyunting dan mengkurasi teks serta metadata multibahasa dengan standar akurasi tinggi.</p><p data-l="en">Edited and curated multilingual text and metadata to high accuracy standards.</p></div></div>
+      <div class="tl-row"><div class="mono muted">2021 – 2025</div><div><h3 data-l="id">S1 Hubungan Internasional · UPN "Veteran" Jawa Timur</h3><h3 data-l="en">B.Soc.Sc. International Relations · UPN "Veteran" East Java</h3><p data-l="id">IPK 3,84. Fokus diplomasi global, ekonomi politik, dan resolusi konflik.</p><p data-l="en">GPA 3.84. Focus on global diplomacy, political economy, and conflict resolution.</p></div></div>
+      <div class="tl-row"><div class="mono muted" data-l="id">Sertifikasi</div><div class="mono muted" data-l="en">Certifications</div><div>
+        <p><b>TOEFL ITP 550</b> · Universitas Airlangga, 2025</p>
+        <p><b data-l="id">Pelaksana Ekspor</b><b data-l="en">Export Executor</b> · BNSP, 2024–2027</p>
+        <p><b>Digital Marketing: Fullstack Intensive Bootcamp</b> · MySkill, 2026</p>
+        <p><b>Digital Marketing</b> · RevoU, 2025</p>
+      </div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="kontak" class="contact">
+  <div class="wrap">
+    <span class="mono muted" data-l="id">Kontak</span><span class="mono muted" data-l="en">Contact</span>
+    <h2 style="margin-top:12px" data-l="id">Siap meriset, meliput, dan menulis untuk tim Anda.</h2>
+    <h2 style="margin-top:12px" data-l="en">Ready to research, report, and write for your team.</h2>
+    <div class="contact-grid">
+      <div><span class="mono muted">Email</span><br><a href="mailto:ametanoveliabrkaro@gmail.com">ametanoveliabrkaro@gmail.com</a></div>
+      <div><span class="mono muted">WhatsApp</span><br><a href="https://wa.me/6285381230405">+62 853 8123 0405</a></div>
+      <div><span class="mono muted">LinkedIn</span><br><a href="https://www.linkedin.com/in/ameta-novelia-br-karo-99184b366/">in/ameta-novelia-br-karo</a></div>
+    </div>
+    <p class="mono muted" style="margin-top:36px">Medan, Indonesia</p>
+  </div>
+</section>
+</main>
+
+<script>
+(function(){
+  var root=document.documentElement;
+  function setLang(l, updateHash){
+    l = (l==='en') ? 'en' : 'id';
+    root.lang = l;
+    document.getElementById('btn-id').setAttribute('aria-pressed', String(l==='id'));
+    document.getElementById('btn-en').setAttribute('aria-pressed', String(l==='en'));
+    document.title = l==='en' ? 'Ameta Novelia Journalism Portfolio' : 'Portofolio Jurnalis Ameta Novelia';
+    if(updateHash){ try{ location.hash = l; }catch(e){} }
+  }
+  document.querySelectorAll('.lang button').forEach(function(b){
+    b.addEventListener('click', function(){ setLang(b.dataset.set, true); });
+  });
+  function fromHash(){ var h=(location.hash||'').slice(1); if(h==='en'||h==='id') setLang(h,false); }
+  window.addEventListener('hashchange', fromHash);
+  setLang('id', false); fromHash();
+})();
+</script>
+</body>
+</html>
